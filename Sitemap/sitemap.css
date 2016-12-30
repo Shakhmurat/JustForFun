@@ -1,0 +1,16 @@
+.sitemap-dropdown .block-in {
+  margin-bottom: 2.8125rem;
+  width: 60%;
+  float: left;
+}
+.sitemap-dropdown .col-lg-3 {
+  width: 30%;
+  margin-bottom: 40px;
+}
+.sitemap-dropdown .block-in:last-child {
+    margin-bottom: 0;
+    width: 40%;
+}
+.sitemap-dropdown .block-in:last-child .col-lg-3 {
+    width: 50%;
+}
