@@ -1,0 +1,34 @@
+
+/*  Слайдер на главной  */
+
+.mainpage-promo-item.item-2x2 {
+	width: 78%;
+  height: 23.75rem;
+  margin-right: 25px;
+}
+.special-carousel .owl-nav {
+	position: absolute;
+	width: 100%;
+	right: 0;
+	bottom: 50%;
+	text-align: right;
+}
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+	position: absolute;
+	
+	bottom: 50%;
+}
+.owl-carousel .owl-nav .owl-next {
+	right: 15px;
+}
+.owl-carousel .owl-nav .owl-prev {
+  left: 15px;	
+}
+.special-carousel .owl-dots {
+	position: absolute;
+	left: 0;
+	bottom: .625rem;
+	width: 100%;
+	text-align: center;
+}
