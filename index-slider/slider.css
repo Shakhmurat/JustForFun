@@ -2,33 +2,38 @@
 /*  Слайдер на главной  */
 
 .mainpage-promo-item.item-2x2 {
-	width: 78%;
+	width: 78%; /* Изменил */
   height: 23.75rem;
-  margin-right: 25px;
+  margin-right: 18px; /* Изменил */
 }
 .special-carousel .owl-nav {
 	position: absolute;
-	width: 100%;
-	right: 0;
-	bottom: 50%;
-	text-align: right;
+	width: 100%; /* Добавил */
+	right: 1.25rem; /* Необходимо удалить */
+	bottom: 50%; /* Изменил */
+	text-align: right; /* Необходимо удалить */
 }
+
+/* Новое правило */
 .owl-carousel .owl-nav .owl-next,
 .owl-carousel .owl-nav .owl-prev {
 	position: absolute;
-	
-	bottom: 50%;
 }
+
+/* Новое правило */
 .owl-carousel .owl-nav .owl-next {
 	right: 15px;
 }
+
+/* Новое правило */
 .owl-carousel .owl-nav .owl-prev {
   left: 15px;	
 }
+
 .special-carousel .owl-dots {
 	position: absolute;
-	left: 0;
+	left: 0; /* Изменил */
 	bottom: .625rem;
-	width: 100%;
-	text-align: center;
+	width: 100%; /* Добавил */
+	text-align: center; /* Добавил */
 }

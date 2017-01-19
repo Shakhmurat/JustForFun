@@ -1,17 +1,22 @@
+
 /*  Шапка сайта  */
 
+
+/* Новое правило */
 .nav-extra .list-item-talapoint {
 	font-size: 13px;
 	color: #644b8b;
+  padding-left: 10px;
 }
 
+/* Новое правило */
 .list-item-talapoint .icon-circle {
   margin: -0.205rem .0150rem 0 0;
 	font-size: 10px;
 }
 
 .nav-extra li {
-	padding: 0 .36rem;
+	padding: 0 .39rem; /* Изменил */
 }
 
 .nav-extra .icon-bonuses {
@@ -19,34 +24,50 @@
 	background: #fcc42e; /* Необходимо удалить */
 	border-radius: 50%; /* Необходимо удалить */
 	color: #000; /* Необходимо удалить */
-	width: 1.2rem;
-	height: 1.1rem;
+	width: 1.2rem; /* Изменил */
+	height: 1.1rem; /* Изменил */
 	background-image: url(/web/images/Money_2x.gif);
-	background-size: 100% 100%;
-	left: 3px;
+	background-size: 100% 100%; /* Добавил */
+	left: 3px; /* Добавил */
 }
 
 .rycle-informer {
-  margin: .25rem 0 0 1.2rem;
+  margin: .25rem 0 0 1.2rem; /* Изменил */
 }
 
 .rycle-informer.active .icon-rycle {
-  color: #5bb757;
-  background-image: url(/web/images/cart.png);
-  width: 20px;
-  height: 20px;
+  position: relative; /* Добавил */
+  padding-left: 20px; /* Добавил */
+  color: #5bb757; /* Необходимо удалить */
 }
 
 .rycle-informer .icon-rycle::before {
-  content: "";
-  background-image: url(/web/images/cart.png);
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
+  content: ""; /* Изменил */
+  background-image: url(/web/images/cart.png); /* Добавил */
+  width: 20px; /* Добавил */
+  height: 20px; /* Добавил */
+  position: absolute; /* Добавил */
+  background-size: contain; /* Добавил */
+  background-repeat: no-repeat; /* Добавил */
+  top: -10px; /* Добавил */
+  left: 0; /* Добавил */
+}
+
+.topline .column-sitemap {
+  width: 13.354%; /* Изменил */
 }
 
 .topline .column-auth {
-    width: 19%;
+  width: 26%; /* Изменил */
 }
+
+@media (min-width: 1041px) {
+  .topline .column-auth {
+      width: 19%; /* Изменил */
+  }
+
+  /* Новое правило */
+  .nav-extra .list-item-talapoint {
+    padding-left: 0;
+  }
+{

@@ -139,6 +139,7 @@
 	border-bottom: 1px solid #eaeaea;
 	font-weight: bold; /* Добавил */
 }
+
 @media (min-width: 1041px) {
   .nav .column-tabs {
       width: 9%; /* Изменил */
