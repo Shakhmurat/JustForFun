@@ -46,3 +46,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.topline .column-auth {
+    width: 19%;
+}

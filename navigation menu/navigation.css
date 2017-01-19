@@ -1,0 +1,177 @@
+
+/*  Навигационное меню  */
+
+
+/* Новое правило */
+.show-nav .nav-main .list-inline > li > a,
+.show-nav .nav .column-tabs {
+  opacity: .5;
+}
+
+/* Новое правило */
+.show-nav .nav-main .list-inline > .toggled > a,
+.show-nav .nav .column-tabs:hover {
+  opacity: 1;
+}
+
+.nav .column-nav {
+	width: 90%; /* Изменил */
+}
+
+.nav-main > ul > li {
+	padding: 8px 10px;
+	position: relative; /* Добавил */
+	vertical-align: top; /* Добавил */
+}
+
+/* Новое правило */
+.nav-main > ul > .toggled::before {
+  content: "";
+  position: absolute;
+  box-shadow: inset 0 -2px 0 0 #644b8b;
+  height: 2px;
+  width: 90%;
+  bottom: 0;
+  left: 0;
+}
+
+/* Новое правило */
+.nav-main > ul > li > a::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -4px;
+}
+
+/* Новые правила */
+.nav-main > ul > li:nth-child(1) > a::before {
+  background-image: url(/web/images/tv.svg);
+}
+.nav-main > ul > li:nth-child(2) > a::before {
+  background-image: url(/web/images/phone.svg);
+}
+.nav-main > ul > li:nth-child(3) > a::before {
+  background-image: url(/web/images/laptop.svg);
+}
+.nav-main > ul > li:nth-child(4) > a::before {
+  background-image: url(/web/images/appliances.svg);
+}
+.nav-main > ul > li:nth-child(5) > a::before {
+  background-image: url(/web/images/kitchen.svg);
+}
+.nav-main > ul > li:nth-child(6) > a::before {
+  background-image: url(/web/images/built-in.svg);
+}
+.nav-main > ul > li:nth-child(7) > a::before {
+  background-image: url(/web/images/climate.svg);
+}
+
+.nav-main > ul > li > a {
+  white-space: normal;
+  font-size: 0.94rem; /* Изменил */
+  line-height: 18px;
+  text-align: left; /* Изменил */
+  font-family: 'OpenSans-Bold';
+  padding-left: 20px; /* Добавил */
+}
+
+.nav-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;  /*  Необходимо удалить  */
+  top: 100%;
+  background: #fff;
+  z-index: 9;
+  line-height: 1.25rem;
+  padding: 2.1875rem 0 1.25rem;
+  display: none;
+}
+
+.nav-dropdown .column-left {
+	width: 100%; /* Изменил */
+}
+
+.nav-dropdown .columns {
+	-webkit-column-count: 3; /* Изменил */
+	-moz-column-count: 3; /* Изменил */
+	column-count: 3; /* Изменил */
+}
+
+/* Новое правило */
+.nav-main > ul > li:nth-child(2) .columns,
+.nav-main > ul > li:nth-child(5) .columns {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+/* Новое правило */
+.nav-main > ul > li:nth-child(6) .nav-dropdown {
+	left: 221.6%;
+}
+
+/* Новое правило */
+.nav-main > ul > li:nth-child(6) .nav-item {
+  padding-right: 1rem;
+}
+
+/* Новое правило */
+.nav-main > ul > li:nth-child(7) .nav-dropdown {
+	left: -148.2%;
+}
+
+.nav-item {
+  display: inline-block;
+  width: 100%;
+  padding-right: 3.07rem; /* Изменил */
+  font-size: .875rem;
+  white-space: nowrap; /* Добавил */
+}
+
+.nav-item h5 {
+	font-size: .9375rem;
+	line-height: 1.25rem;
+	margin-bottom: .9375rem;
+	padding-bottom: .25rem;
+	border-bottom: 1px solid #eaeaea;
+	font-weight: bold; /* Добавил */
+}
+@media (min-width: 1041px) {
+  .nav .column-tabs {
+      width: 9%; /* Изменил */
+  }
+}
+
+.tabs-header > ul li:only-child {
+    position: relative; /* Добавил */
+    width: 6.25rem; /* Изменил */
+}
+
+.tabs-header > ul li:nth-child(1) a {
+	background: #5bb757; /* Необходимо удалить */
+}
+
+.tabs-header > ul a {
+	display: block;
+	font-size: 1rem; /* Изменил */
+	color: #000; /* Изменил */
+	padding: .0625rem .625rem .1875rem;
+	height: 3.1875rem;
+  margin-top: -9px; /* Добавил */
+}
+
+/* Новое правило */
+.tabs-header > ul li:only-child::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -5px;
+  background-image: url(/web/images/stock.svg);
+  top: 6px;
+}
