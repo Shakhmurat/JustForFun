@@ -142,13 +142,13 @@
 
 @media (min-width: 1041px) {
   .nav .column-tabs {
-      width: 9%; /* Изменил */
+    width: 9%; /* Изменил */
   }
 }
 
 .tabs-header > ul li:only-child {
-    position: relative; /* Добавил */
-    width: 6.25rem; /* Изменил */
+  position: relative; /* Добавил */
+  width: 6.25rem; /* Изменил */
 }
 
 .tabs-header > ul li:nth-child(1) a {

@@ -26,7 +26,7 @@
 	color: #000; /* Необходимо удалить */
 	width: 1.2rem; /* Изменил */
 	height: 1.1rem; /* Изменил */
-	background-image: url(/web/images/Money_2x.gif);
+	background-image: url(/web/images/coin.png);
 	background-size: 100% 100%; /* Добавил */
 	left: 3px; /* Добавил */
 }
@@ -63,7 +63,7 @@
 
 @media (min-width: 1041px) {
   .topline .column-auth {
-      width: 19%; /* Изменил */
+    width: 19%; /* Изменил */
   }
 
   /* Новое правило */

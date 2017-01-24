@@ -1,0 +1,351 @@
+
+/* Хиты продаж */
+
+.mainpage-good-item:hover::after {
+  z-index: -1; /* Необходимо удалить */
+}
+
+.mainpage-good-item.item-2x1:hover .mainpage-good-item-wrapper::before {
+  bottom: -2.5625rem; /* Необходимо удалить */
+}
+
+.mainpage-good-item:hover .mainpage-good-item-wrapper::before {
+  box-shadow: 0 4px 18.8px 1.2px hsla(0,0%,40%,.25);
+  left: -.375rem; /* Удалить */
+  right: -.375rem; /* Удалить */
+  top: -.375rem; /* Удалить */
+  bottom: -4.5rem; /* Удалить */
+}
+
+.mainpage-good-item-wrapper {
+  position: relative;
+  padding: 1.25rem;
+  height: 24.313rem; /* Изменил */
+}
+
+.mainpage-good-item-toggle {
+  position: absolute; /* Необходимо удалить */
+  left: 0; /* Необходимо удалить */
+  right: 0; /* Необходимо удалить */
+  padding-top: .8125rem;
+  display: none; /* Необходимо удалить */
+}
+
+.mainpage-good-item-toggle .block-in {
+  margin-bottom: 1rem; /* Изменил */
+}
+
+.mainpage-good-item.item-2x1 .mainpage-good-item-img {
+  position: absolute;
+  width: 12.5rem;
+  height: 9.375rem; /* Изменил */
+  line-height: 9rem; /* Изменил */
+  left: 0;
+  top: 0;
+}
+
+.mainpage-good-item.item-2x1 .mainpage-good-item-order .block-in,
+.mainpage-good-item.item-2x1 .mainpage-good-item-toggle .block-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.mainpage-good-item .label {
+  font-size: 0.8rem !important; /* Изменил */
+}
+
+.mainpage-good-item.item-2x1 .mainpage-good-item-order .column-left,
+.mainpage-good-item.item-2x1 .mainpage-good-item-toggle .column-left {
+  width: 33%;
+}
+.mainpage-good-item.item-2x1 .mainpage-good-item-order .column-center,
+.mainpage-good-item.item-2x1 .mainpage-good-item-toggle .column-center {
+  width: 40%;
+}
+.mainpage-good-item.item-2x1 .mainpage-good-item-order .column-right,
+.mainpage-good-item.item-2x1 .mainpage-good-item-toggle .column-right {
+  width: 25%;
+}
+
+.mainpage-good-item.item-2x1 .mainpage-good-item-img a {
+  height: 9.375rem; /* Изменил */
+}
+
+.mainpage-good-item.item-2x1 .mainpage-good-item-body, 
+.mainpage-good-item.item-2x1 .mainpage-good-item-toggle {
+  padding-left: 13.75rem; /* Удалил */
+}
+
+.mainpage-good-item.item-2x1 .mainpage-good-item-title {
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
+  margin-bottom: .5625rem;
+  padding-left: 13.75rem; /* Добавил */
+}
+
+.mainpage-good-item.item-2x1 .mainpage-good-item-title.js-text-ellipsis {
+  height: 9.75rem; /* Изменил */
+}
+
+
+/* Стили дла бонусов, начало. */
+/* Новые правила, начало */
+.purchase-bonus-box {
+  height: 30px;
+  /* Если у товара отсутствуют бонусы, 
+  необхожимо скрыть блок с помощью 
+  свойтсва visibility: hidden; 
+  Таким образом блок сохранит высоту,
+  (чтобы не ломать сетку)
+  но не будет отображаться. */
+}
+.mainpage-good-item.item-2x1 .purchase-bonus-box {
+  height: auto;
+}
+.purchase-bonus {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.purchase-bonus::after {
+  content: "?";
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  width: 13px;
+  height: 13px;
+  font-size: 9px;
+  display: inline-block;
+  text-align: center;
+  line-height: 12px;
+  color: #ccc;
+  margin-left: 5px;
+}
+.purchase-bonus::before {
+  content: "";
+  background: url(web/images/coin.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  position: absolute;
+  left: -4px;
+  top: -2px;
+}
+
+.bonus-tooltip {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  width: 13px;
+  height: 13px;
+  font-size: 9px;
+  text-align: center;
+  line-height: 12px;
+  color: #ccc;
+}
+.bonus-tooltip .tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 190%;
+  left: 250%;
+  margin-left: -100px;
+  box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.35);
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.bonus-tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 38%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.bonus-tooltip:hover {
+  border: 1px solid #644b8b;
+  background-color: #644b8b;
+}
+
+.bonus-tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+/* Новые правила, конец */
+/* Стили для бонусов, конец */
+
+
+/* Акционная цена, начало */
+/* Новые правила */
+.mainpage-good-item-price.new-price {
+  display: inline-block;
+  color: #ff4a2e;
+}
+
+.mainpage-good-item-price.old-price {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding-left: 10px;
+}
+
+.mainpage-good-item-price.old-price::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background-color: #000;
+  left: 7px;
+  top: 50%;
+}
+/* Новые правила, конец */
+
+.mainpage-good-item:hover .tag-discount {
+  padding-left: .75rem; /* Необходимо удалить */
+}
+
+.tag-discount::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 1.575rem 0 0 .3125rem; /* Изменил */
+  border-color: transparent transparent transparent #e94228;
+  right: -.3125rem;
+  top: 0;
+}
+
+.tag-discount {
+  font-size: .8375rem; /* Изменил */
+  line-height: .8375rem; /* Изменил */
+  padding: .4rem .275rem .3375rem; /* Изменил */
+}
+
+.mainpage-good-item:hover .tag {
+  left: -1.75rem; /* Необходимо удалить */
+  padding-left: .875rem; /* Необходимо удалить */
+}
+/* Акционная цена, конец */
+
+
+/* Рассрочка, начало */
+/* Новые правила */
+.tag .small-text {
+  font-size: 65%;
+}
+
+.tag-yellow {
+  background-color: #ffcd47;
+}
+
+.tag-installments {
+  font-size: 1.2rem;
+  line-height: .8375rem;
+  padding: .3rem .275rem .3075rem;
+}
+
+.tag-installments::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 1.875rem 7px 0 0;
+  border-color: #ffcd47 transparent transparent transparent;
+  right: -0.412rem;
+  top: 0;
+}
+.tag-installments::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255,255,255,.4);
+  position: absolute;
+  left: 31px;
+  top: 0;
+}
+
+.tag-installments-text {
+  display: inline-block;
+  font-size: 10px;
+  text-transform: none;
+  letter-spacing: 0.2px;
+  line-height: 9px;
+}
+/* Новые правила, конец */
+/* Рассрочка, конец */
+
+
+/* В подарок */
+/* Новые правила */
+.gift {
+  position: absolute;
+  z-index: 3;
+  border: 2px solid #eb3833;
+  height: 95px;
+  width: 70px;
+  left: 5px;
+  top: 3px;
+}
+.gift::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 14px;
+  background-color: #eb3833;
+  top: -5px;
+  left: 28px;
+}
+.gift-text {
+  background: #eb3833;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%;
+}
+.gift-img {
+  height: calc(100% - 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Новые правила, конец */
+/* В подарок, конец */
+
+
+/* Закладки */
+.icon-bookmark::before {
+  content: ""; /* Изменил */
+  color: #fcc42e; /* Необходимо удалить */
+  background-image: url(/web/images/star.png); /* Добавил */
+  position: absolute; /* Добавил */
+  background-size: contain; /* Добавил */
+  width: 20px; /* Добавил */
+  height: 20px; /* Добавил */
+  top: 0; /* Добавил */
+  right: 0; /* Добавил */
+}
+
+.link-bookmark.add .icon-bookmark::before {
+  color: #42cc1a;
+  content: "\e928"; /* Изменил */
+  background-image: none; /* Добавил */
+}
+/* Закладки, конец */
