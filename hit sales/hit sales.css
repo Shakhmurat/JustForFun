@@ -180,6 +180,7 @@
 .bonus-tooltip:hover {
   border: 1px solid #644b8b;
   background-color: #644b8b;
+  cursor: default;
 }
 
 .bonus-tooltip:hover .tooltip-text {
