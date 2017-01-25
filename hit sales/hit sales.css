@@ -1,19 +1,6 @@
 
 /* Хиты продаж */
 
-/* Стили для рекламы */
-/* Новые правила */
-.mainpage-good-item.ad .mainpage-good-item-img {
-  height: 100%;
-}
-
-.mainpage-good-item.ad .mainpage-good-item-img a {
-  height: 100%;
-}
-/* Новые правила, конец */
-/* Стили для рекламы, конец */
-
-
 .mainpage-good-item:hover::after {
   z-index: -1; /* Необходимо удалить */
 }
@@ -363,3 +350,16 @@
   background-image: none; /* Добавил */
 }
 /* Закладки, конец */
+
+
+/* Стили для рекламы */
+/* Новые правила */
+.mainpage-good-item.ad .mainpage-good-item-img {
+  height: 100%;
+}
+
+.mainpage-good-item.ad .mainpage-good-item-img a {
+  height: 100%;
+}
+/* Новые правила, конец */
+/* Стили для рекламы, конец */
