@@ -103,9 +103,11 @@
   (чтобы не ломать сетку)
   но не будет отображаться. */
 }
+
 .mainpage-good-item.item-2x1 .purchase-bonus-box {
   height: auto;
 }
+
 .purchase-bonus {
   display: inline-block;
   position: relative;
@@ -113,19 +115,7 @@
   padding-left: 20px;
   font-size: 13px;
 }
-.purchase-bonus::after {
-  content: "?";
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  width: 13px;
-  height: 13px;
-  font-size: 9px;
-  display: inline-block;
-  text-align: center;
-  line-height: 12px;
-  color: #ccc;
-  margin-left: 5px;
-}
+
 .purchase-bonus::before {
   content: "";
   background: url(web/images/coin.png);
