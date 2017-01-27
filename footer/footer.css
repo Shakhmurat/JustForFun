@@ -1,0 +1,63 @@
+
+/* Меню футера */
+
+.nav-smart-available .footer {
+  height: 24.625rem;
+}
+
+.footer-nav {
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+
+.footer-nav .column {
+	width: 15%;
+	margin-right: 35px;
+	vertical-align: top;
+}
+
+.footer-nav .column:last-child {
+	margin-right: 0;
+}
+
+.footer-title {
+	font-size: 1.0625rem;
+	line-height: 1.25rem;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+
+.footer-item {
+	display: block;
+	font-size: .875rem;
+  line-height: 1.25rem;
+  margin-bottom: .3375rem;
+}
+.footer-item.footer-mail {
+	margin-top: 5px;
+}
+
+.footer-item.footer-mail,
+.footer-item.developers {
+	display: inline-block;
+	border-bottom: 1px solid black;
+	line-height: 17px;
+	transition: .3s;
+}
+.footer-item.footer-mail:hover,
+.footer-item.developers:hover {
+	border-bottom: 1px solid #5bb757;
+}
+
+.footer-nav .share {
+	margin-top: 15px;
+}
+
+.share li:first-child {
+	padding: 0 .1875rem 0 0; 
+}
+
+.copyright {
+	margin-bottom: .2rem;
+	margin-top: 3.2rem;
+}
