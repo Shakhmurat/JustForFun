@@ -177,11 +177,12 @@
   height: 7rem;
   background: -webkit-linear-gradient(transparent,rgba(247,247,247,.9));
   background: linear-gradient(transparent,rgba(247,247,247,.9));
-  transition: .5s;
+  opacity: 1;
+  transition: 1s;
 }
 
 .mainpage-review-item.hovered .mainpage-review-item-body::after {
-  height: 1rem;
+  opacity: 0;
 }
 
 .mainpage-review-item-in::after {
