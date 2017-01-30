@@ -1,0 +1,74 @@
+
+/* Баннер справа от слайдера " */
+
+.mainpage-promo {
+  height: 23.75rem;
+  /*overflow: hidden; Необходимо удалить*/
+}
+
+.mainpage-promo-item.item-1x2 .mainpage-promo-item-body {
+  position: relative;
+  background-color: #fff;
+  padding: 1px 15px;  
+}
+
+.mainpage-promo-item.item-1x2 .mainpage-promo-item-body::before {
+  content: "";
+  position: absolute;
+  box-shadow: 0 4px 18.8px 1.2px hsla(0,0%,40%,.25);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.mainpage-promo-item.item-1x2 .mainpage-good-item-order {
+  border-top: none;
+  padding-top: 0;
+}
+
+.mainpage-promo-item.item-1x2 .mainpage-good-item-img {
+  margin-bottom: 0;
+}
+.mainpage-promo-item.item-1x2 .mainpage-good-item-title {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.mainpage-promo-item.item-1x2 .mainpage-good-item-toggle {
+  padding-top: 0;
+}
+
+.mainpage-promo-item.item-1x2 .tag {
+  top: 125px;
+  left: 0;
+}
+
+.mainpage-promo-item.item-1x2 .mainpage-good-item-img,
+.mainpage-promo-item.item-1x2 .mainpage-good-item-img a {
+  height: 7rem;  
+}
+
+.mainpage-promo-item.item-1x2 .column-left,
+.mainpage-promo-item.item-1x2 .column-right {
+  width: 45%;
+  text-align: left;
+}
+
+.mainpage-promo-item.item-1x2 .column-left:only-child {
+  width: 100%;
+  text-align: left;
+}
+
+.mainpage-promo-item.item-1x2 .btn-order {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: .875rem;
+  font-weight: 700;
+  color: #000;
+  padding: .4375rem;
+  border: .0625rem solid #5bb757;
+  border-radius: .1875rem;
+  max-width: 100%;
+}
