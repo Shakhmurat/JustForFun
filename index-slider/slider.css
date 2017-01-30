@@ -2,9 +2,9 @@
 /*  Слайдер на главной  */
 
 .mainpage-promo-item.item-2x2 {
-	width: 78%; /* Изменил */
+	width: 79%; /* Изменил */
   height: 23.75rem;
-  margin-right: 18px; /* Изменил */
+  margin-right: 13px; /* Изменил */
 }
 .special-carousel .owl-nav {
 	position: absolute;
