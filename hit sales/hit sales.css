@@ -139,6 +139,7 @@
   line-height: 12px;
   color: #ccc;
 }
+
 .bonus-tooltip .tooltip-text {
   visibility: hidden;
   width: 200px;
@@ -188,6 +189,7 @@
 }
 
 .mainpage-good-item-price.old-price {
+  position: relative;
   display: inline-block;
   font-size: 1.1rem;
   padding-left: 10px;
