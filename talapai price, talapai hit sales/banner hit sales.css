@@ -22,6 +22,15 @@
   bottom: 0;
 }
 
+.mainpage-promo-item.item-1x2 .mainpage-promo-item-body::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #ff4a2e;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .mainpage-promo-item.item-1x2 .mainpage-good-item-order {
   border-top: none;
   padding-top: 0;
@@ -37,6 +46,12 @@
 
 .mainpage-promo-item.item-1x2 .mainpage-good-item-toggle {
   padding-top: 0;
+}
+
+.mainpage-promo-item.item-1x2 .mainpage-good-item-toggle.timer-in {
+  position: absolute;
+  background-color: #fff5da;
+  height: 5rem;
 }
 
 .mainpage-promo-item.item-1x2 .tag {

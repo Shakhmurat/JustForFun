@@ -1,0 +1,27 @@
+/* Таймер */
+
+.countdown-block > p {
+  margin: 3px 0 4px;
+}
+.countdown-item {
+  position: relative;
+  display: inline-block;
+}
+
+.countdown-item span {
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+  background-image: url(/web/images/timer.png);
+  letter-spacing: 10px;
+  padding: 7px 7px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 32px;
+  max-width: 45px;
+}
+.countdown-item p {
+  font-size: 12px;
+  margin: 0 3px 0 0;
+}
