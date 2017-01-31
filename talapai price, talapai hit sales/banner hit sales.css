@@ -9,7 +9,8 @@
 .mainpage-promo-item.item-1x2 .mainpage-promo-item-body {
   position: relative;
   background-color: #fff;
-  padding: 1px 15px;  
+  padding: 1px 15px;
+  height: 100%;
 }
 
 .mainpage-promo-item.item-1x2 .mainpage-promo-item-body::before {

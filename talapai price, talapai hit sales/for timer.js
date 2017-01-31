@@ -7,7 +7,7 @@ function() {
     var totalHours = event.offset.totalDays * 24 + event.offset.hours;
     var myHour, myMin, mySec;
     // var format = '%H:%M:%S';
-    var allHours = event.offset.hours;
+    var allHours = event.offset.totalDays * 24 + event.offset.hours;
     var hourstr = allHours.toString();
     var hour = hourstr.slice(hourstr.length - 1);
     if (hour < 5 && hour > 1 && (allHours < 10 || allHours > 20)) {
