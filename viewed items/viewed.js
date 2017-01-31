@@ -7,7 +7,9 @@ function() {
   var e = t.find(".item"),
     n = !1;
   // Добавленный код, начало
-  if (e.length == 1) {
+  if (e.length == 0) {
+    $(".item-talapai-banner").css("width", "100%");
+  } else if (e.length == 1) {
     $(".item-talapai-banner").css("width", "75%");
   } else if (e.length == 2) {
     $(".item-talapai-banner").css("width", "50%");
