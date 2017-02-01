@@ -16,7 +16,7 @@
 }
 
 .nav-extra li {
-	padding: 0 .39rem; /* Изменил */
+	padding: 0 .3rem; /* Изменил */
 }
 
 .nav-extra .icon-bonuses {
@@ -57,8 +57,12 @@
   width: 13.354%; /* Изменил */
 }
 
+.topline .column-nav {
+  width: 55.8%;
+}
+
 .topline .column-auth {
-  width: 26%; /* Изменил */
+  width: 15%; /* Изменил */
 }
 
 @media (min-width: 1041px) {
@@ -70,4 +74,4 @@
   .nav-extra .list-item-talapoint {
     padding-left: 0;
   }
-{
+}
