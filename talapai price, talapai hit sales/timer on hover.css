@@ -1,0 +1,15 @@
+
+
+.mainpage-good-item-toggle.timer-in:hover .countdown-block,
+.mainpage-good-item-toggle.timer-in .countdown-block ~ .block-in {
+  display: none;
+}
+
+.mainpage-promo-item.item-1x2 .mainpage-good-item-toggle.timer-in:hover {
+  background-color: #fff;
+}
+
+.mainpage-good-item-toggle.timer-in:hover .block-in {
+  display: block;
+  padding: 0px 15px 0px;
+}
