@@ -354,5 +354,9 @@
 .mainpage-good-item.ad .mainpage-good-item-img a {
   height: 100%;
 }
+
+.mainpage-good-item.ad .mainpage-good-item-img img {
+  max-width: 100%;
+}
 /* Новые правила, конец */
 /* Стили для рекламы, конец */

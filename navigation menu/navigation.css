@@ -4,12 +4,14 @@
 
 /* Новое правило */
 .show-nav .nav-main .list-inline > li > a,
+.show-nav .nav-main .list-inline > li > a::before,
 .show-nav .nav .column-tabs {
   opacity: .5;
 }
 
 /* Новое правило */
 .show-nav .nav-main .list-inline > .toggled > a,
+.show-nav .nav-main .list-inline > .toggled > a::before,
 .show-nav .nav .column-tabs:hover {
   opacity: 1;
 }
