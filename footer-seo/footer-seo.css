@@ -1,0 +1,40 @@
+
+* new-styles.css *
+.footer-nav {
+  padding-top: 40px;
+  padding-bottom: 40px; * Изменил *
+}
+
+* Новое правило *
+.footer-seo {
+	min-height: 150px;
+	background-color: #fff;
+}
+
+* Новое правило *
+#footer-seo-description {
+	max-height: 120px;
+	padding-bottom: 90px;
+	font-size: 15px;
+	line-height: 1.2rem;
+	color: rgb(100, 75, 139);
+	overflow: hidden;
+}
+
+* Новое правило *
+#footer-seo-description .content {
+	position: relative;
+	max-height: 47px;
+}
+
+* Новое правило *
+#footer-seo-description .hidden-block .content::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3rem;
+  background: -webkit-linear-gradient(rgba(255,255,255,0),hsla(0,0%,100%,.8));
+  background: linear-gradient(rgba(255,255,255,0),hsla(0,0%,100%,.8));
+}
