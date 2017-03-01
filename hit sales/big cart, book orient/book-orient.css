@@ -1,0 +1,34 @@
+
+* Новое правило *
+.mainpage-good-item.item-2x1.book-orient .mainpage-good-item-img {
+	height: 19.375rem;
+	line-height: 19rem;
+}
+
+* Новое правило *
+.mainpage-good-item.item-2x1.book-orient .mainpage-good-item-img a {
+	height: 19.375rem;
+}
+
+* Новое правило *
+.mainpage-good-item.item-2x1.book-orient .mainpage-good-item-body {
+  padding-left: 200px;
+}
+
+* Новое правило *
+.mainpage-good-item.item-2x1.book-orient .mainpage-good-item-title.js-text-ellipsis {
+  height: 6rem;
+	margin-top: 83px;
+	padding-left: 0;	
+}
+
+* Новое правило *
+.mainpage-good-item.item-2x1.book-orient .mainpage-good-item-order {
+  padding-top: 1rem;
+}
+
+* Новое правило *
+.mainpage-good-item.item-2x1.book-orient .mainpage-good-item-order .column-left, 
+.mainpage-good-item.item-2x1.book-orient .mainpage-good-item-toggle .column-left {
+	width: 50%;
+}
