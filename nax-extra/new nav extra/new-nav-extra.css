@@ -1,0 +1,207 @@
+/* Для баннера, начало */
+/* Новые правила, начало */
+.banner-box {
+  display: inline-block;
+}
+
+.banner-club {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: none;
+  background-image: linear-gradient(to bottom, #4f3575, #6b5192);
+  z-index: 4;
+}
+
+.banner-club .container {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.btn-yellow {
+	width: 255px;
+	height: 58px;
+	font-size: 26px;
+  font-family: DINPro-bold;
+  background-color: #fcc42e;
+  border-radius: 8px;
+}
+
+.btn-yellow:hover {
+  background-color: #ffd564;;
+}
+
+.banner-club .btn-close {
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	background: none;
+}
+
+.banner-club .banner-tem-img {
+	height: 101px;
+	margin-bottom: 15px;
+  line-height: 101px;
+  text-align: center;
+}
+
+.banner-club .banner-item:nth-child(2) img,
+.banner-club .banner-item:nth-child(4) img {
+	padding-left: 20px;
+}
+
+.banner-club .banner-item {
+	float: left;
+	margin-left: 60px;
+}
+
+.banner-club .banner-item:first-child {
+	margin-left: 20px;
+}
+
+.banner-club .banner-item:last-child {
+	margin-left: 95px;
+}
+
+.banner-club .banner-item:last-child .description {
+	max-width: 340px;
+	margin-bottom: 23px;
+	font-size: 18px;
+	font-family: DINPro-light;
+	text-align: left;
+	white-space: normal;
+}
+
+.banner-club .description {
+	font-size: 15px;
+	font-family: DINPro-regular;
+	line-height: 1.2;
+	text-align: center;
+	color: #fff;
+}
+
+.btn-banner {
+	position: relative;
+	padding: .75rem .875rem .53rem;
+  color: #fff;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: linear-gradient(to bottom, #6b5192, #4f3575);	
+}
+
+.btn-banner.sticky {
+	position: fixed;
+	top: 238px;
+}
+
+.btn-banner.sticky .btn-arrow {
+	-moz-transform: rotate(180deg); 
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.btn-banner::after, 
+.btn-banner::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	top: 0;
+}
+
+.btn-banner::after {
+	left: -3px;
+	border-width: 0 3px 3px 0;
+	border-color: transparent #6b5192 transparent transparent;
+}
+
+.btn-banner::before {
+	right: -3px;
+	border-width: 3px 3px 0 0;
+	border-color: #6b5192 transparent transparent transparent;
+}
+
+.btn-arrow {
+  margin-left: 4px;
+}
+
+@media (max-width: 1230px) {
+  .banner-club .banner-item:first-child {
+  	margin-left: 0;
+  }
+  .banner-club .banner-item {
+  	margin-left: 4vw;
+  }
+  .banner-club .banner-item:last-child {
+    margin-left: 8vw;
+  }
+  .btn-banner.sticky {
+  	margin-left: -40px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .banner-club .banner-item {
+  	margin-left: 2vw;
+  }
+  .banner-club .banner-item:last-child {
+    margin-left: 4vw;
+  }
+  .btn-banner.sticky {
+  	margin-left: -180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-club,
+  .btn-banner.sticky,
+  .banner-club .btn-close {
+  	position: absolute;
+  }
+  .banner-club .banner-item:first-child {
+  	margin-left: 20px;
+  }
+  .banner-club .banner-item {
+  	margin-left: 60px;
+  }
+  .banner-club .banner-item:last-child {
+    margin-left: 95px;
+  }
+  .btn-banner.sticky {
+  	margin-left: 0;
+  }
+}
+/* Новые правила, конец */
+/* Для баннера, конец */
+
+
+/* Изменения для шапки, начало */
+/* new-styles.css */
+.topline .column-nav {
+	width: 65%; /* Изменил */
+	white-space: nowrap;
+}
+
+/* new-styles.css */
+.topline .column-auth {
+  width: 15%;
+}
+
+/* new-styles.css */
+.rycle-informer {
+	min-width: 158px;
+	margin: .25rem 10px 0 50px; /* Изменил */
+}
+
+/* new-styles.css */
+.nav-extra li {
+  padding: 0 .65rem; /* Изменил */
+}
+/* Изменения для шапки, конец */

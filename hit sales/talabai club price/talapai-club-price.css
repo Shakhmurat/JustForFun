@@ -1,0 +1,38 @@
+/* Стили для кнопок в хите продаж, начало */
+.btn-talapai-price,
+.btn-talapai-club {
+  margin-left: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.btn-talapai-price {
+  border-color: #5bb757;
+}
+
+.btn-talapai-price:active {
+	color: #fff;
+	background: #5bb757;
+	box-shadow: none;
+}
+
+.btn-talapai-club {
+  border-color: #e9b52b;
+}
+/* Стили для кнопок в хите продаж, конец */
+
+
+/* Стили для элементов с талапай ценой */
+/* Новое правило */
+.talapai-club-price,
+.talapai-club-installments {
+	display: none;
+}
+
+/* Правка высоты блока цены в хите продаж */
+/* Новое правило */
+.mainpage-good-item-order .column-left {
+  height: 34px;
+}
