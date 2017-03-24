@@ -1,0 +1,28 @@
+
+new-styles.css
+
+.tag-discount {
+  font-size: .8375rem;
+  line-height: .8375rem;
+  padding: .4rem .575rem .3375rem .275rem; Изменил
+  background-image: url(url(/web/images/new-styles/triangle.png); Добавил
+  background-size: 100% 100%; Добавил
+  background-repeat: no-repeat; Добавил
+  background-color: transparent; Добавил
+}
+
+
+Удалить правило
+Оно есть и в "new.styles.css" и в "main.min.css"
+
+.tag-discount::after {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-style: solid;
+	border-width: 1.575rem 0 0 .3125rem;
+	border-color: transparent transparent transparent #e94228;
+	right: -.3125rem;
+	top: 0;
+}
