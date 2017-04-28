@@ -1,0 +1,94 @@
+.dashed {
+	border-bottom: 1px dashed;
+}
+
+.form-checkout .form-group--club-member {
+	margin-bottom: 25px;
+}
+
+.form-group--club-member .input-col {
+	width: 211px;
+	border-radius: 5px;
+	vertical-align: top;
+}
+
+.form-group--club-member .dashed {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.form-group--club-member .input-col--checkbox {
+  background-color: #623880;	
+}
+
+.form-group--club-member .input-col--auth {
+	padding-top: 14px;
+  padding-left: 25px;
+}
+
+.form-group--club-member .input-col--checkbox .checkbox-label {
+  padding: 14px 0 12px 40px;
+  margin-right: 0;
+  font-size: 16px;
+  color: #fcc42e;
+}
+
+.form-group--club-member .input-col--checkbox .checkbox-label::before {
+	top: 12px;
+	left: 12px;
+  border-color: #fcc42e;
+  transform: translateY(0);
+}
+
+.form-group--club-member .input-col--checkbox .checkbox-label.checked::after {
+  content: "";
+  top: 19px;
+	left: 13px;
+  width: 25px;
+	height: 23px;
+  background-image: url(../images/checkbox.png);
+  background-repeat: no-repeat;
+  transition: none;
+}
+
+.form-group--club-member .input-col--checkbox .hint {
+	margin: 5px 0 0;
+	font-size: 13px;
+	color: #fff;
+}
+
+.form-group--club-member .input-col--auth .hint {
+	color: #989798;
+	font-size: 14px;
+	margin: 5px 0;
+}
+
+.for-club-member-js {
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+}
+
+.form-group.form-group-member-js {
+  display: none;
+}
+
+.label-disabled {
+  opacity: .4;
+  pointer-events: none;
+}
+
+.form-checkout .form-group.with-addon .input-col {
+  display: table;
+}
+
+.form-checkout .form-group.with-addon .form-control {
+  width: 180px;
+}
+
+.form-group--bonus .hidden-text {
+	display: none;
+	margin-left: 32px;
+	margin-bottom: 0;
+	font-size: 16px;
+}

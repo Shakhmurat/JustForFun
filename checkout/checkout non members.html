@@ -1,0 +1,290 @@
+<div class="page">
+  <div class="page-content">
+    <div class="checkout">
+      <div class="block-in clearfix">
+      <a href="/" class="link-back"><i class="icon icon-prev"></i> <span><b>Продолжить покупки</b></span></a>
+      <div class="section-title">
+        <h3 class="title--primary">Оформление заказа</h3> 
+      </div>
+        <div class="column column-left">
+          <div class="form-auth form-checkout">
+            <form class="form-horizontal">
+              <fieldset class="fieldset">
+                <legend class="title--secondary">Контактные данные</legend>
+                <div class="form-group form-group--club-member">
+                  <div class="input-col input-col--checkbox">
+                    <label class="checkbox checkbox-label label-club-member-js">
+                      <input type="checkbox" id="checkbox-club-member" name="">Стать членом клуба
+                      <p class="hint">Активируйте привелегии, скидки и бонусы</p>
+                    </label>
+                  </div>
+                  <div class="input-col input-col--auth">
+                    <a class="dashed" href="" data-toggle="modal" data-target="#modal-auth">Войти в клуб</a>
+                    <p class="hint">Для членов клуба</p>
+                  </div>
+                </div>
+                <div class="form-group"> 
+                  <label for="email-field" class="control-label">Электронная почта</label>
+                  <div class="input-col"> 
+                    <input class="form-control" id="email-field" placeholder="Введите адрес" type="email">
+                  </div>
+                </div>
+                <div class="form-group with-addon form-group-member-js">
+                  <label for="password-field" class="control-label">Пароль</label>
+                  <div class="input-col"> 
+                    <input id="password-field" class="form-control" placeholder="Придумайте пароль" type="password">
+                    <div class="input-addon">
+                      <a href="#" class="show-password-js"><img src="images/icon-eye.png"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-group-member-js"> 
+                  <label for="name-field" class="control-label"></label>
+                  <div class="input-col"> 
+                    <input class="form-control" id="name-field" placeholder="Повторите пароль" type="password"> 
+                  </div> 
+                </div> 
+                <div class="form-group"> 
+                  <label for="name-field" class="control-label">Имя</label>
+                  <div class="input-col"> 
+                    <input class="form-control" id="name-field" placeholder="Ваше имя" type="text"> 
+                  </div> 
+                </div> 
+                <div class="form-group"> 
+                  <label for="surname-field" class="control-label">Фамилия</label>
+                  <div class="input-col"> 
+                    <input class="form-control" id="surname-field" placeholder="Ваша фамилия" type="text">
+                  </div>
+                </div>
+                <div class="form-group"> 
+                  <label for="tel-field" class="control-label">Телефон</label>
+                  <div class="input-col"> 
+                    <input class="form-control tel--control" id="tel-field" placeholder="+7" type="text">
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset">
+                <legend class="title--secondary">Доставка</legend>
+                <div class="form-group"> 
+                  <p class="control-label">Населенный пункт</p>
+                  <div class="input-col"> 
+                    <select>
+                      <option>Алматы</option>
+                      <option>Шымкент</option>
+                      <option>Усть-каменогорск</option>
+                    </select>
+                  </div> 
+                </div> 
+                <div class="form-group"> 
+                  <p for="surname-field" class="control-label">Способ доставки</p>
+                  <div class="input-col"> 
+                    <label class="radio-label">
+                      <input id="courier-delivery" class="delivery-input-js" value="" name="delivery" type="radio" checked>Курьером
+                    </label>
+                    <label class="radio-label">
+                      <input id="self-delivery" class="delivery-input-js" value="" name="delivery" type="radio">Самовывоз
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group form-group--delivery">
+                  <div class="form-group courier-delivery-group"> 
+                    <label for="textarea-field" class="control-label">Адрес доставки</label>
+                    <div class="input-col"> 
+                      <textarea class="form-control textarea--control" id="textarea-field" placeholder="Введите адрес доставки"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group self-delivery-group"> 
+                    <label for="textarea-field" class="control-label">Пункт самовывоза</label>
+                    <div class="input-col"> 
+                      <p class="talapai-title">Talap<i class="icon icon-circle label-green"></i>int</p>
+                      <p class="description">Алматы, Наурызбай батыра 7Б, ТРЦ Атриум, бутик F23</p>
+                      <a href="#" class="btn btn-purple">Показать на карте<i class="icon icon-next"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset">
+                <legend class="title--secondary">Оплата</legend>
+                <div class="form-group form-group--payment"> 
+                  <p class="control-label">Выберите способ</p>
+                  <div class="input-col"> 
+                    <label class="radio-label">
+                      <input id="courier-delivery" value="" name="payment-method" type="radio">Наличные
+                    </label>
+                    <label class="radio-label">
+                      <input id="courier-delivery" value="" name="payment-method" type="radio" checked>Платёжные карты
+                    </label>
+                  </div> 
+                </div>
+                <div class="form-group form-group--bonus"> 
+                  <p class="control-label">Талапай бонусы</p>
+                  <div class="input-col">
+                    <label class="checkbox checkbox-label label-disabled"> 
+                      <input id="checkbox-use-bonus" type="checkbox">Использовать бонусы
+                    </label>
+                    <p class="hidden-text color-gray">У Вас нет доступных бонусов</p>
+                  </div>
+                </div>
+                <div class="form-group form-group--slider checkout-slider-js clearfix"> 
+                  <div class="form-bonus">
+                    <div class="form-group">
+                      <p class="form-slider-label">Ваши бонусы</p><span class="yours-bonus">12 456 905</span>
+                    </div>
+                    <div class="form-group">
+                      <label for="use-bonus" class="form-slider-label">Использовать</label>
+                      <div class="input-col">
+                        <input type="text" id="use-bonus" class="form-control" name="">
+                      </div>
+                    </div>
+                    <div class="form-group form-slider">
+                      <div class="form-slider-in">
+                        <div class="slider slider-horizontal" id="">
+                          <div class="slider-track">
+                            <div class="slider-track-low" style="left: 0px; width: 0%;"></div>
+                            <div class="slider-selection" style="left: 0%; width: 0%;"></div>
+                            <div class="slider-track-high" style="right: 0px; width: 100%;"></div>
+                            <div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="0" style="left: 0%;" aria-valuenow="NaN" tabindex="0"></div>
+                            <div class="slider-handle max-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="0" style="left: 0%;" aria-valuenow="0" tabindex="0"></div>
+                          </div>
+                          <div class="tooltip tooltip-main top" role="presentation" style="left: 0%; margin-left: 0px;">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">NaN : 0</div>
+                          </div>
+                          <div class="tooltip tooltip-min top" role="presentation" style="left: 0%; margin-left: 0px; display: none;">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">NaN</div>
+                          </div>
+                          <div class="tooltip tooltip-max top" role="presentation" style="left: 0%; margin-left: 0px; display: none;">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">0</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-footer">
+                  <div class="form-group">
+                    <p class="control-label">К оплате</p>
+                    <div class="input-col"> 
+                      <span class="checkout-total-amount">10 543 045<span class="curr">₸</span></span>
+                    </div>
+                  </div>
+                  <div class="form-group for-club-member-js">
+                    <p class="control-label">Вы получите бонусов</p>
+                    <div class="input-col"> 
+                      <span class="checkout-total-bonus">15 642</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-confirm">Оформить заказ</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="column column-right">
+          <h3 class="title--secondary">Выбранные товары</h2>
+          <ul class="purchase-product-list">
+            <li class="purchase-product-item">
+              <button class="btn-delete"></button>
+              <div class="purchase-product-overlay"><span>Удалить товар?</span></div>
+              <div class="purchase-product-item-info">
+                <figure class="purchase-product-item-img">
+                  <img src="images/samples/2016_06_04__02_31_01__639.jpg">
+                </figure>
+                <p class="purchase-product-item-title js-text-ellipsis">Смартфон LGH522Y LG G4C Titan Gold Смартфон LGH522Y LG G4C Titan Gold</p>
+              </div>
+              <div class="purchase-product-item-count">
+                <div class="item-count-box">
+                  <a href="" class="number-minus">  –</a>
+                   <span class="number-item"><span class="number-count">5</span>шт.</span>
+                  <a href="" class="number-plus">+</a>
+                </div>
+              </div>
+              <div class="purchase-product-item-sum">
+                50 000<span class="curr">₸</span>
+                <div class="product-item-bonus for-club-member-js">
+                  +<span class="bonus-number">1400</span>
+                </div>
+              </div>
+            </li>
+            <li class="purchase-product-item">
+              <button class="btn-delete"></button>
+              <div class="purchase-product-overlay"><span>Удалить товар?</span></div>
+              <div class="purchase-product-item-info">
+                <figure class="purchase-product-item-img">
+                  <img src="images/samples/2016_29_04__03_10_50__525.jpg">
+                </figure>
+                <p class="purchase-product-item-title js-text-ellipsis">Смартфон LGH522Y LG G4C Titan Gold</p>
+              </div>
+              <div class="purchase-product-item-count">
+                <div class="item-count-box">
+                  <a href="" class="number-minus">  –</a>
+                  <span class="number-item"><span class="number-count">55</span>шт.</span>
+                  <a href="" class="number-plus">+</a>
+                </div>
+              </div>
+              <div class="purchase-product-item-sum with-discount">
+                50 000<span class="curr">₸</span>
+                <div class="old-sum">
+                  70 000<span class="curr">₸</span>
+                </div>
+                <div class="product-item-bonus for-club-member-js">
+                  +<span class="bonus-number">1400</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="purchase-product-total">
+            <span class="color-gray">Итого:</span><span class="product-total-number">126</span>товаров на сумму<span class="product-total-sum">1 040 000</span><span class="curr">₸</span>
+            <div class="product-total-bonus for-club-member-js">
+              Талапай бонусы:<span class="bonus-number">2800</span>
+            </div>
+          </div>
+        </div>
+        <div class="column column-right">
+          <h3 class="title--secondary">Преимущества покупок у нас</h2>
+          <ul class="advantage-list">
+            <li class="advantage-item">
+              <figure class="advantage-item-img">
+                <img src="images/talapai-club.png">
+              </figure>
+              <p class="title--secondary">ТАЛАПАЙ Клуб</p>
+              <p class="advantage-item-description">Любой зарегистрированный пользователь становится участником ТАЛАПАЙ Клуба</p>
+            </li>
+            <li class="advantage-item">
+              <figure class="advantage-item-img">
+                <img src="images/talapoint.png">
+              </figure>
+              <p class="title--secondary">Магазин TALAPOINT</p>
+              <p class="advantage-item-description">TALAPOINT — место, где Вы сможете почувствовать себя как в обычном магазине.а</p>
+            </li>
+            <li class="advantage-item">
+              <figure class="advantage-item-img">
+                <img src="images/lock.png">
+              </figure>
+              <p class="title--secondary">Безопасность платежей</p>
+              <p class="advantage-item-description">Весь процесс оплаты производится через систему авторизации платёжных карт e-pay АО «Казкоммерцбанк».</p>
+            </li>
+            <li class="advantage-item">
+              <figure class="advantage-item-img">
+                <img src="images/dock.png">
+              </figure>
+              <p class="title--secondary">Гарантия и сервис</p>
+              <p class="advantage-item-description">На весь товар представляется гарантийный талон и сервисное обслуживание.</p>
+            </li>
+            <li class="advantage-item">
+              <figure class="advantage-item-img">
+                <img src="images/truck.png">
+              </figure>
+              <p class="title--secondary">Бесплтаная доставка</p>
+              <p class="advantage-item-description">Для всех участников клуба Талапай действуйет бесплатная доставка от двери до двери.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
