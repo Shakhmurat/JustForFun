@@ -1,0 +1,47 @@
+
+.checkout-success {
+  margin: 40px 0 65px;
+}
+
+.checkout-success .title--primary {
+	position: relative;
+	margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+
+.checkout-success .title--primary::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 800px;
+  height: 1px;
+  background-color: rgba(143,143,143, .2)
+}
+
+.checkout-success .description {
+	font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+
+.checkout-success .description.color-gray {
+	color: #969696;
+}
+
+.checkout-success .btn {
+	padding: 12px 30px;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid rgb(91, 183, 87);;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.checkout-success .btn:hover {
+	color: #fff;
+  background-color: rgb(91, 183, 87);}
+}
