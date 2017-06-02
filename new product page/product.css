@@ -571,12 +571,14 @@
 	background: #fff;
 	box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.1);
 	opacity: 0;
+	visibility: hidden;
 	transition: .3s;
 	z-index: 100;
 }
 
 .product-nav.sticky {
   opacity: 1;
+  visibility: visible;
 }
 
 .product-nav .product-title p {
@@ -943,4 +945,88 @@
 	height: 100%;
 	border-left: 1px solid #dedede;
 	border-right: 1px solid #dedede;
+}
+
+
+/* Для слайдера */
+
+/* style.css */
+@media (min-width:1041px) {
+	.product-gallery-viewport {
+		height: 24.625rem; /* Изменил */
+		padding-left: 1.125rem;
+		padding-right: 0; /* Изменил */
+		margin-bottom: 0; /* Добавил */
+	}
+	.product-gallery-viewport .slide {
+		width: 18.7rem; /* Изменил */
+		margin-left: auto;
+	}
+}
+
+.lSSlideOuter {
+  padding-right: 10px !important;
+}
+
+.lSSlideOuter ul {
+  padding-left: 0;
+}
+
+.lSSlideOuter li {
+  list-style: none;
+}
+
+#product-gallery-vertical {
+	width: 75%;
+	padding-left: 0px;
+	margin-left: auto;
+}
+
+.slide-pager-container {
+  position: absolute;
+	top: 100px;
+	left: 15px;
+	width: 60px;
+  height: 235px;
+	overflow: hidden;
+}
+
+.product-gallery .lSSlideOuter.vertical .lSGallery {
+	position: absolute;
+	left: 0;
+	right: initial;
+}
+
+.product-gallery .lSSlideOuter .lSPager.lSGallery li.active, 
+.product-gallery .lSSlideOuter .lSPager.lSGallery li:hover {
+	border-color: #644b8b;
+  border-radius: 0 !important;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+	height: 50px !important;
+	padding: 8px 10px;
+	border: 2px solid rgba(0,0,0,.1);
+	transition: .3s;
+}
+
+.product-gallery .lSSlideOuter.vertical .lSAction > .lSPrev {
+	top: 60px;
+	background-image: url(../images/arrow-up.png);
+}
+
+.product-gallery .lSSlideOuter.vertical .lSAction > .lSNext {
+	bottom: 30px;
+	background-image: url(../images/arrow-down.png);
+}
+
+.product-gallery .lSSlideOuter.vertical .lSAction > a {
+	left: 46px;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 1;
+}
+
+.product-gallery .lSSlideOuter.vertical .lSAction > a:hover {
+	opacity: .5;
 }
